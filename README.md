@@ -2,6 +2,15 @@
 
 A submission-ready REST API that performs CRUD operations on ONGC well-operation records.
 
+## Live deployment
+
+- API: https://ongc-well-operations-api.onrender.com
+- Swagger UI: https://ongc-well-operations-api.onrender.com/api-docs
+- Health check: https://ongc-well-operations-api.onrender.com/health
+- Source code: https://github.com/patel31/ongc-well-operations-api
+
+Deployed on Render with a Neon PostgreSQL database. The complete live CRUD acceptance test passed on 21 November 2026.
+
 ## Fields
 
 | API field | Type | Required | Rule |

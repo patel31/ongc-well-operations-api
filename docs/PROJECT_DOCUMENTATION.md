@@ -4,7 +4,7 @@
 
 **Project type:** College project / ONGC submission  
 **Version:** 1.0.0  
-**Prepared:** 7 November 2026  
+**Prepared:** 21 November 2026  
 **Technology:** Node.js, Express.js, PostgreSQL
 
 ---
@@ -14,6 +14,17 @@
 The ONGC Well Operations Management API is a RESTful web service for storing and managing operational information associated with wells. It provides Create, Read, Update, and Delete (CRUD) operations for four business fields: Well Number, Job, Purpose, and Date/Time. PostgreSQL provides persistent storage, while input validation, error handling, rate limiting, and HTTP security headers improve reliability and safety.
 
 The project can be hosted at no cost for academic demonstration using a Render free web service and a Neon free PostgreSQL database.
+
+### Live project
+
+| Resource | URL |
+|---|---|
+| Public API | `https://ongc-well-operations-api.onrender.com` |
+| Interactive Swagger UI | `https://ongc-well-operations-api.onrender.com/api-docs` |
+| Health check | `https://ongc-well-operations-api.onrender.com/health` |
+| GitHub repository | `https://github.com/patel31/ongc-well-operations-api` |
+
+The deployed service runs in Render's Singapore region and connects to a Neon PostgreSQL database in the Singapore region.
 
 ## 2. Objectives
 
@@ -224,6 +235,10 @@ If Blueprint deployment is unavailable:
 | Secret | `DATABASE_URL=<Neon connection string>` |
 
 ## 10. Testing procedure
+
+### Deployment acceptance result
+
+The public deployment was tested on 21 November 2026. The health endpoint reported `status: ok` and `database: connected`. A temporary record was created, read, updated, found in the paginated list, deleted, and then confirmed absent with `404 Not Found`. The temporary test record was removed successfully.
 
 ### Automated tests
 
