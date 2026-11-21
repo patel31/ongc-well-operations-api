@@ -11,6 +11,8 @@ A submission-ready REST API that performs CRUD operations on ONGC well-operation
 
 Deployed on Render with a Neon PostgreSQL database. The complete live CRUD acceptance test passed on 21 November 2026.
 
+Company and API consumers should start with the [complete integration guide](docs/API_DOCUMENTATION.md). A ready-to-import [Postman collection](docs/ONGC_Well_Operations.postman_collection.json) is also included.
+
 ## Fields
 
 | API field | Type | Required | Rule |
